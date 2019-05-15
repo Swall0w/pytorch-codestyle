@@ -2,6 +2,8 @@ import argparse
 import torch
 import torch.optim as optim
 from torchvision import datasets, transforms
+from mnist.model import Net
+from mnist.utils import train, test
 
 
 def main():

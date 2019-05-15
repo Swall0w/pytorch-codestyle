@@ -6,5 +6,5 @@ __url__ = 'https://github.com/Swall0w/pytorch-codestyle'
 from mnist import model
 from mnist import utils
 
-__all__ == ['model', 'utils']
+__all__ = ['model', 'utils']
 
