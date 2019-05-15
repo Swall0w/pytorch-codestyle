@@ -11,8 +11,8 @@ class Net(nn.Module):
         self.fc1 = nn.Linear(4*4*50, 500)
         self.fc2 = nn.Linear(500, 10)
 
-    def forward(self, x):
-        x = F.relu(self.conv1(x))
+    def forward(self, x: torch.Tensor) -> torch.Tensor:
+        x = F.relu(self.conv1(x)) # [1, 1, 28, 28]
         x = F.max_pool2d(x, 2, 2)
         x = F.relu(self.conv2(x))
         x = F.max_pool2d(x, 2, 2)
