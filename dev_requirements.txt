@@ -1,0 +1,4 @@
+pycodestyle
+autopep8
+pylint
+pytest
